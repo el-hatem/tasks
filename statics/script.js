@@ -21,7 +21,7 @@ if (!localStorage['tasks']) {
 } else {
 	const arrayOfTasks = JSON.parse(localStorage['tasks']);
 	arrayOfTasks.forEach((task) => {
-		if (task !== null){
+
 		 tasks.innerHTML += `
 		  <div class="col-sm-12 col-md-4 mt-2">
 		    <div class="card">
@@ -39,7 +39,6 @@ if (!localStorage['tasks']) {
 		    </div>
 		  </div>
 		`
-		}
 	});
 
 }
